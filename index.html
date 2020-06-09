@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <title>CSS Website layout</title>
+  <meta charset="uft-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  * {
+  	box-sizing: border-box;
+  }
+
+  body {
+  	margin: 0; 
+  }
+
+
+  .header {
+  	background-color: lightgreen;
+  	padding: 20px;
+  	text-align: center;
+  }
+
+
+  .topnav {
+  	overflow: hidden;
+  	background-color: #333;
+  }
+
+  .topnav a {
+  	float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+  }
+
+    .topnav a:hover {
+  	background-color: #fff8dc;
+  	color: black;
+  }
+   .column {
+   	float: left;
+   	 padding: 10px;
+  } 
+   .column.side {  
+   	width: 25%;
+  }
+ 
+  .column.middle { 
+  	width:50%;
+  	}
+     .row:after { 
+  	 content:"";
+  	 display: table;
+  	clear: both;
+  }
+  	
+     @media screen and (max-width: 600px)   { 
+        .column.side, .column.middle {
+        	width: 100%;
+         }
+     }
+ .footer {
+ 	background-color:yellow;
+ 	padding: 10px;
+ 	text-align: center;
+  }
+  </style>
+  </head>
+  <body>
+
+  <div class="header">
+  <h1>My webite</h1>
+
+</div>
+<div class="topnav">
+	<a href="#">Home</a>
+	<a href="#">About</a>
+	<a href="#">Profile
+<div class="gallery">
+  <a target="_blank" href="https://www.amazon.com">
+    <img src="mar1.jpg" alt="The OG 4">
+  </a>
+  <div class="desc">We are studying html</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.ebay.com">
+    <img src="mar2.jpg" alt="9 frame avengers">
+  </a>
+  <div class="desc">wow beautiful</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.flipkart.com">
+    <img src="mar3.jpg" alt="superhero">
+  </a>
+  <div class="desc"> my favourite superhero>
+  </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.etsy.com/in-en/listing/703629696/531-pc-framed-marvel-watercolor-avengers?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=marvel+wall+art&ref=sc_gallery-1-2&plkey=a5852723c6f50ee0746a108f1e90176c5f1f42a6%3A703629696&pro=1">
+    <img src="mar5.jpg" alt="Avengers Assemble">
+  </a>
+  <div class="desc">Avengers Assemble</div>
+</div>
+
+</body>
+</html>
+
+
+<div class="footer">
+	<p>footer</p>
+  </div>
+  
+  </body>
+  </html>	
